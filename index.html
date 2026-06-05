@@ -40,6 +40,12 @@ color:#1f2937;
 overflow-x:hidden;
 }
 
+/* KODE AGAR GAMBAR TIDAK KELUAR LAYAR (RESPONSIF) */
+img {
+max-width: 100%;
+height: auto;
+}
+
 /* HEADER */
 
 header{
@@ -69,6 +75,14 @@ padding:15px 0;
 font-weight:700;
 font-size:18px;
 color:var(--primary);
+display:flex;
+align-items:center;
+gap:15px; /* Mengatur jarak logo dan tulisan */
+}
+
+/* MENGATUR UKURAN LOGO */
+.logo img {
+width:60px;
 }
 
 .nav-btn{
@@ -146,6 +160,13 @@ background:var(--secondary);
 color:#111;
 }
 
+/* MEMPERCANTIK GAMBAR HERO (GEDUNG) */
+.hero-content img {
+margin-top: 40px;
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
 /* STAT */
 
 .stats{
@@ -214,6 +235,12 @@ transform:translateY(-5px);
 .program-card h3{
 color:var(--primary);
 margin-bottom:15px;
+}
+
+/* MEMPERCANTIK GAMBAR JURUSAN */
+.program-card img {
+border-radius: 12px;
+margin-bottom: 15px;
 }
 
 /* KEUNGGULAN */
@@ -330,6 +357,14 @@ font-size:28px;
 font-size:28px;
 }
 
+.logo {
+font-size: 14px;
+}
+
+.logo img {
+width: 45px;
+}
+
 }
 
 </style>
@@ -368,8 +403,8 @@ SPMB 2026/2027
 </div>
 
 <h1>
-Penerimaan Murid Baru
-SMK Muhammadiyah Karanganyar
+Penerimaan Murid Baru<br>
+SMK Muhammadiyah Karanganyar<br>
 Kabupaten Pekalongan
 </h1>
 
